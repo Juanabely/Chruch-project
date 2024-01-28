@@ -16,17 +16,17 @@
     display: none;
 }
 .header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
     background: transparent;
     align-items: center;
     z-index: 100;
-    display: flex;
-    margin-left: -2rem;
-    gap: -2rem;
-    padding-left: -4rem;
+    /* display: flex; */
+    /* margin-left: -2rem; */
+    /* gap: -2rem; */
+    /* padding-left: -4rem; */
     transition: .3s;
     font-size: smaller;
 }
