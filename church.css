@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* background-color: black; */
     scroll-behavior: smooth;
     /* color: aliceblue; */
@@ -16,7 +16,6 @@
     display: none;
 }
 .header {
-    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -262,9 +261,13 @@ h3{
 
 
 @media (max-width:768px){
+    section{
+        margin-right: -7rem;
+        /* min-height: 100vh; */
+    }
     .header {
-        background: var(--bg-color);
-        position: fixed;
+        position: sticky;
+        background: var(--bg-color); 
     }
     #menu-icon{
         display: block;
@@ -276,14 +279,16 @@ h3{
     left: -100%;
     width: 100%;
     height: 60vh;
-    padding: 0.1rem 2%;
-    color: black;
+    background: black;
+    padding: 10px;
+    margin-top: -2rem;
+    color: #F88379;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     transition: .25s ease;
     transition-delay: .25s;
     }
     .links{
-        color:black ;
+        color:#F88379 ;
         display: block;
         font-size: 2rem;
         
@@ -305,8 +310,14 @@ h3{
 
 
 @media(max-width:430px){
+    html{
+        font-size: 100%;
+    }
     #home{height: 50vh;
     font-size: 10px;
+    }
+    section{
+        width: 100%;
     }
     .cards{
         height: 40vh;
@@ -326,12 +337,11 @@ h3{
     }
     .card-title{
         
-        font-size: 2px;
+        font-size: 1px;
         margin-left: -2rem;
     }
     .card-words{
-        font-size: 7px;
-        font-weight: 800;
+        font-size: 9px;
     }
     html{
         font-size: 40%;
@@ -340,7 +350,6 @@ h3{
 
         width: 70%;
         height: 10vh;
-        font-size: 6px;
         margin-right: -5rem;
     }
     #menu-icon{
@@ -364,19 +373,20 @@ h3{
     .fellowship-img{
         height: 80px;
         width: 80px;
-        margin-bottom: 17rem;
+        margin-bottom: 40rem;
         border-radius: 10px;
     }
     .prayers-img{
         height: 80px;
         width: 80px;
-        margin-bottom: 10rem; 
+        margin-bottom: 30rem; 
         border-radius: 10px;
         margin-top: 10rem;
     }
     .main-event{
         margin-top: 7rem;
-        height: 80vh;
+        height: 150vh;
+        font-size: 15px;
     }
     .nav a{
         font-size: 10px;
@@ -391,5 +401,9 @@ h3{
 }
 .container{
     height: 60vh;
+}
+h3{
+    font-size: 14px;
+    font-weight: bold;
 }
 }
